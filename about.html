@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Antonio Batista Montaño | Sobre Mí</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 80px; 
+            height: 80px;
+            margin-right: 15px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        #habilidades {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #habilidades h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            position: relative;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            height: 25px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .progress-bar .progress {
+            background-color: #76c7c0;
+            height: 100%;
+            border-radius: 5px;
+            width: 0;
+            transition: width 0.3s;
+        }
+
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #76c7c0;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="ProfilePicture.jpg" alt="Foto de Marco Antonio Batista Montaño">
+        <h1>Marco Antonio Batista Montaño</h1>
+
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color: #0d3b66;">Inicio</a></li>
+            <li><a href="proyects.html" style="color: #0d3b66;">Proyectos</a></li>
+            <li><a href="about.html" style="color: #0d3b66;">Sobre mi</a></li>
+            <li><a href="contact.html" style="color: #0d3b66;">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Biografía profesional -->
+    <section id="intro">
+        <p>Soy Marco Antonio Batista Montaño, un desarrollador de videojuegos en formación con más de 4 años de estudios en la Universidad Interamericana de Puerto Rico. He trabajado como diseñador de UI/UX en la fundación "Ayudinga" durante 3 meses. Tengo habilidades avanzadas en el uso de motores de videojuegos como Unity y Ren'Py, además de experiencia en la animación y creación de modelos 3D en Blender. He participado en diversas competencias y gamejams como InterJam 1 y 2, Gamejam Plus, y GlobalGamejam, donde he obtenido dos certificados de primer lugar en la competencia InterAwards de mi universidad.</p>
+    </section>
+
+    <!-- Habilidades técnicas -->
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skill">
+            <h3>Unity</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Rempy</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Programación Web</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Character Designer</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Blender</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Animación | Rigging</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Lenguajes C#, Python</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación y experiencia relevante -->
+    <section id="experiencia">
+        <h2>Experiencias Profesionales</h2>
+        <p>Ayudinga <br> Emprendimiento Familiar</p>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación Académica</h2>
+        <p>Oyente de Charla en el Ministerio de Cultura <br> 
+           Oyente de Charla sobre la importancia del copyright <br> 
+           Oyente de Charla sobre la ética de uso de IA <br> 
+           Bilingüe, Español nativo e Inglés avanzado</p>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contacto:</p>
+            <ul>
+                <li><a href="mailto:MBATISTA5630@panama.inter.edu" class="icon-email" title="Email"><i class="fa fa-envelope"></i> MBATISTA5630@panama.inter.edu</a></li>
+                <li><a href="https://www.linkedin.com/in/marco-antonio-batista-monta%C3%B1o-70b919298/" class="icon-linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/Reaper3506" class="icon-github" title="GitHub"><i class="fa fa-github"></i> GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+    
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            body.classList.add('dark-mode');
+            themeSwitch.checked = true;
+        }
+    
+        themeSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+    </script>
+
+</body>
+</html>
