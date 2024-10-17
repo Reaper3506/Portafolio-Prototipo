@@ -3,7 +3,16 @@ Descripción breve del proyecto
 
 Este proyecto consiste en la creación de un portafolio profesional en línea que muestra mi experiencia, habilidades y proyectos destacados en el desarrollo de videojuegos y tecnología. El sitio web está compuesto por varias páginas interconectadas que proporcionan información detallada sobre mí, mis proyectos, mi formación académica y formas de contacto. El objetivo principal es presentar de manera atractiva y funcional mi perfil profesional a potenciales empleadores, colaboradores y visitantes interesados.
 
+Tecnologías utilizadas
+HTML5 Semántico: Utilicé etiquetas semánticas como <header>, <nav>, <section>, <article>, <footer>, entre otras, para estructurar el contenido de manera lógica y mejorar la accesibilidad y el SEO del sitio.
 
+CSS3: Apliqué estilos personalizados para mejorar la apariencia y usabilidad del sitio. Usé selectores, flexbox, animaciones y transiciones para crear una experiencia de usuario agradable.
+
+JavaScript: Implementé funcionalidades interactivas como el efecto de máquina de escribir, el reloj digital en tiempo real, el interruptor de modo oscuro/claro, y el contador de visitas utilizando localStorage.
+
+Font Awesome: Integré iconos para enriquecer la interfaz de usuario, especialmente en los enlaces de contacto y redes sociales.
+
+Google Fonts: Utilicé fuentes personalizadas para mejorar la legibilidad y estética del texto.
 
 Características implementadas en los HTML
 Página de Inicio (index.html):
