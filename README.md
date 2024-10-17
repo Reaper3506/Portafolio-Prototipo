@@ -67,7 +67,5 @@ Desafío: El interruptor de modo oscuro/claro funcionaba en una sola página y n
 Solución: Añadí el mismo código JavaScript y el interruptor en todas las páginas, y utilicé localStorage para guardar la preferencia del usuario. Así, el modo seleccionado se mantiene consistente al navegar por el sitio.
 
 Efecto de Máquina de Escribir Duplicado y Desalineado:
-
 Desafío: El efecto de máquina de escribir en el título principal mostraba el texto dos veces y no estaba centrado.
-
 Solución: Eliminé la animación CSS que causaba la duplicación y centré el texto usando CSS. Solo mantuve el efecto implementado con JavaScript para mayor control y evitar conflictos.
