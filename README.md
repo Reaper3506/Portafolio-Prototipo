@@ -5,8 +5,7 @@ Este proyecto consiste en la creación de un portafolio profesional en línea qu
 
 Tecnologías utilizadas
 
-HTML5 Semántico: Utilicé etiquetas semánticas como header, nav, section, article, footer, entre otras, para estructurar el contenido de manera lógica y mejorar la accesibilidad y el SEO del sitio.
-
+HTML5 Semántico: Utilicé etiquetas semánticas como header, nav, section, article, footer, entre otras, para estructurar el contenido de manera lógica y mejorar la accesibilidad y el SEO del sitio.                                                                           
 CSS3: Apliqué estilos personalizados para mejorar la apariencia y usabilidad del sitio. Usé selectores, flexbox, animaciones y transiciones para crear una experiencia de usuario agradable.
 
 JavaScript: Implementé funcionalidades interactivas como el efecto de máquina de escribir, el reloj digital en tiempo real, el interruptor de modo oscuro/claro, y el contador de visitas utilizando localStorage.
@@ -66,6 +65,8 @@ Desafío: El interruptor de modo oscuro/claro funcionaba en una sola página y n
 
 Solución: Añadí el mismo código JavaScript y el interruptor en todas las páginas, y utilicé localStorage para guardar la preferencia del usuario. Así, el modo seleccionado se mantiene consistente al navegar por el sitio.
 
-Efecto de Máquina de Escribir Duplicado y Desalineado:
+Efecto de Máquina de Escribir Duplicado y Desalineado: 
+
 Desafío: El efecto de máquina de escribir en el título principal mostraba el texto dos veces y no estaba centrado.
+
 Solución: Eliminé la animación CSS que causaba la duplicación y centré el texto usando CSS. Solo mantuve el efecto implementado con JavaScript para mayor control y evitar conflictos.
